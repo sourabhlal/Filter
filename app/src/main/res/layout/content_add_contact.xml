@@ -12,4 +12,78 @@
     tools:context="app.sourabhlal.filter.AddContactActivity"
     tools:showIn="@layout/activity_add_contact">
 
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName|textCapWords"
+        android:hint="Name"
+        android:ems="10"
+        android:id="@+id/editName"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:hint="Phone Number"
+        android:ems="10"
+        android:id="@+id/editPhone"
+        android:layout_below="@+id/editName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:imeOptions="actionNext" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="Email Address"
+        android:ems="10"
+        android:id="@+id/editEmail"
+        android:layout_below="@+id/editPhone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:imeOptions="actionNext" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:hint="Address"
+        android:ems="10"
+        android:id="@+id/editAddress"
+        android:layout_below="@+id/editEmail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:imeOptions="actionNext" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textUri"
+        android:hint="Website"
+        android:ems="10"
+        android:id="@+id/editWebsite"
+        android:layout_below="@+id/editAddress"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:imeOptions="actionNext" />
+
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tags"
+        android:maxEms="10"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/editTags"
+        android:layout_below="@+id/editWebsite"
+        android:layout_marginTop="25dp"
+        android:text=""
+        android:imeOptions="actionDone">
+
+        <requestFocus />
+    </AutoCompleteTextView>
 </RelativeLayout>
+
