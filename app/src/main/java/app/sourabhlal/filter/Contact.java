@@ -7,7 +7,6 @@ import java.util.List;
  * Created by sourabhlal on 2/20/2016.
  */
 public class Contact {
-    private int id;
     private String name;
     private String number;
     private String email;
@@ -18,7 +17,6 @@ public class Contact {
 
     public Contact(String newName){
         this.name = newName;
-        this.id = -1;
     }
 
     public void addLabel(String label){
@@ -42,13 +40,6 @@ public class Contact {
         return address;
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
 
     public void setAddress(String address) {
         this.address = address;
