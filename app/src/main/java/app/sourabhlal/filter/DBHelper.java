@@ -55,7 +55,7 @@ public class DBHelper extends SQLiteOpenHelper {
             + col_m2mID + " integer primary key autoincrement, "
             + col_labelID + " integer not null, "
             + col_contactID + " integer not null), "
-            + "FOREIGN KEY("+col_labelID+") REFERENCES "+Table_Labels+"("+col_labID+");"
+            + "FOREIGN KEY("+col_labelID+") REFERENCES "+Table_Labels+"("+col_labID+"),"
             + "FOREIGN KEY("+col_contactID+") REFERENCES "+Table_Contacts+"("+col_ID+"));";
 
     public DBHelper(Context context) {
