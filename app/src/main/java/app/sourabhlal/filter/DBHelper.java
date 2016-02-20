@@ -6,6 +6,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -122,10 +123,14 @@ public class DBHelper extends SQLiteOpenHelper {
 
     public List<Contact> getContactsByLabel(Label label) {
         // TODO: 2/20/2016 Sourabh
+        List<Contact> matchingContacts = new ArrayList<Contact>();
+        return matchingContacts;
     }
 
     public List<Label> getLabelsByContact(Contact contact) {
         // TODO: 2/20/2016 Sourabh
+        List<Label> matchingLabels = new ArrayList<Label>();
+        return matchingLabels;
     }
 
     // COUNT

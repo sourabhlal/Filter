@@ -18,6 +18,7 @@ public class Contact {
 
     public Contact(String newName){
         this.name = newName;
+        this.id = -1;
     }
 
     public void addLabel(String label){
