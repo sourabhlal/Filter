@@ -36,7 +36,7 @@ public class DBHelper extends SQLiteOpenHelper {
             + col_Name + " text not null, "
             + col_PhoneNumber + " text, "
             + col_Email + " text, "
-            + col_Picture + " text, "
+            // + col_Picture + " BLOB, "
             + col_Address + " text, "
             + col_Website + " text);";
 
