@@ -8,6 +8,7 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
@@ -35,26 +36,21 @@ public class AddContactActivity extends AppCompatActivity {
         actv.setTextColor(Color.RED);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Saved", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-                saveContact(view);
-            }
-        });
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
 
     public void saveContact (View view){
         Intent intent = new Intent(this, MainActivity.class);
-        DBHelper dh = new DBHelper(view.getContext());
+        DBHelper dh = new DBHelper(getApplicationContext());
         String name = ((EditText)findViewById(R.id.editName)).getText().toString();
         Contact newCon = new Contact(name);
-        newCon.setNumber(((EditText)findViewById(R.id.editPhone)).getText().toString());
-        newCon.setEmail(((EditText)findViewById(R.id.editEmail)).getText().toString());
-        newCon.setAddress(((EditText)findViewById(R.id.editAddress)).getText().toString());
-        newCon.setWebsite(((EditText)findViewById(R.id.editWebsite)).getText().toString());
+        newCon.setNumber(((EditText) findViewById(R.id.editPhone)).getText().toString());
+        newCon.setEmail(((EditText) findViewById(R.id.editEmail)).getText().toString());
+        newCon.setAddress(((EditText) findViewById(R.id.editAddress)).getText().toString());
+        newCon.setWebsite(((EditText) findViewById(R.id.editWebsite)).getText().toString());
+
+        Log.d("Contact: ", newCon.getName() + " " + newCon.getNumber());
+
         dh.addContact(newCon);
         String message = "Save Account";
         intent.putExtra(EXTRA_MESSAGE, message);
