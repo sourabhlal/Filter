@@ -101,15 +101,8 @@ public class DBHelper extends SQLiteOpenHelper {
 
 
     public void addLabel(Label label) {
-<<<<<<< HEAD
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues v = new ContentValues();
-=======
-        // TODO: 2/20/2016 Louis/Sofia
-        SQLiteDatabase db = this.getWritableDatabase();
-
-        ContentValues v =new ContentValues();
->>>>>>> 9713beb9d414ba3316a15ef6713e9036badd065d
         v.put(col_labelID,label.getName());
 
         db.insert(Table_Labels, null, v);
@@ -119,10 +112,6 @@ public class DBHelper extends SQLiteOpenHelper {
 
     // READ(ALL)
     public Contact getContact(int id) {
-<<<<<<< HEAD
-=======
-        // TODO: 2/20/2016 Louis/Sofia
->>>>>>> 9713beb9d414ba3316a15ef6713e9036badd065d
         SQLiteDatabase db = this.getReadableDatabase();
 
         Cursor cursor = db.query(Table_Contacts, new String[] { col_contactID,
@@ -140,19 +129,11 @@ public class DBHelper extends SQLiteOpenHelper {
     }
 
     public Label getLabel(int id) {
-<<<<<<< HEAD
-=======
-        // TODO: 2/20/2016 Louis/Sofia
->>>>>>> 9713beb9d414ba3316a15ef6713e9036badd065d
         SQLiteDatabase db = this.getReadableDatabase();
 
         Cursor cursor = db.query(Table_Labels, new String[] { col_labName,
                         col_labID }, col_labID + "=?",
-<<<<<<< HEAD
                 new String[] { String.valueOf(id) }, null, null, null, null);
-=======
-                        new String[] { String.valueOf(id) }, null, null, null, null);
->>>>>>> 9713beb9d414ba3316a15ef6713e9036badd065d
         if (cursor != null)
             cursor.moveToFirst();
 
@@ -182,19 +163,12 @@ public class DBHelper extends SQLiteOpenHelper {
                 contact.setWebsite(cursor.getString(5));
                 // Adding contact to list
                 contactList.add(contact);
-<<<<<<< HEAD
+
             } while (cursor.moveToNext());
         }
 
         // return contact list
         return contactList;
-=======
-                } while (cursor.moveToNext());
-            }
-
-            // return contact list
-            return contactList;
->>>>>>> 9713beb9d414ba3316a15ef6713e9036badd065d
     }
 
     public List<Label> getAllLabels() {
@@ -242,22 +216,11 @@ public class DBHelper extends SQLiteOpenHelper {
     }
 
     public int getLabelsCount() {
-<<<<<<< HEAD
         String Query = "SELECT  * FROM " + Table_Labels;
         Cursor c = this.getReadableDatabase().rawQuery(Query, null);
         c.close();
         int count = c.getCount();
         return count;
-=======
-        // TODO: 2/20/2016 Louis/Sofia
-        String countQuery = "SELECT  * FROM " + Table_Labels;
-        SQLiteDatabase db = this.getReadableDatabase();
-        Cursor cursor = db.rawQuery(countQuery, null);
-        cursor.close();
-
-        // return count
-        return cursor.getCount();
->>>>>>> 9713beb9d414ba3316a15ef6713e9036badd065d
     }
 
     //UPDATE
