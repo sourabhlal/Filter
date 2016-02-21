@@ -2,6 +2,7 @@ package app.sourabhlal.filter;
 
 import android.app.ListActivity;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -13,6 +14,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -57,6 +59,32 @@ public class MainActivity extends ListActivity {
         Contact[] array = contacts.toArray(new Contact[contacts.size()]);
         items = array;
 
+/*        SquidCursor<Label> l = db.query(Label.class, selectAll);
+        List<String> labels = new ArrayList<>();
+
+        try {
+            for (l.moveToFirst(); !l.isAfterLast(); l.moveToNext()) {
+                Label q = new Label();
+                q.readPropertiesFromCursor(l);
+                Log.i("success", q.getLabels());
+                labels.add(q.getLabels());
+            }
+        } finally {
+            l.close();
+        }
+
+        String[] labelsList = labels.toArray(new String[labels.size()]);
+
+
+        //Creating the instance of ArrayAdapter containing list of language names
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>
+                (this,android.R.layout.select_dialog_item,labelsList);
+        //Getting the instance of AutoCompleteTextView
+        AutoCompleteTextView actv= (AutoCompleteTextView)findViewById(R.id.filter);
+        actv.setThreshold(1);//will start working from first character
+        actv.setAdapter(adapter);//setting the adapter data into the AutoCompleteTextView
+        actv.setTextColor(getResources().getColor(R.color.colorAccent));
+*/
         setListAdapter(new AccountAdapter());
         //selection=(TextView)findViewById(R.id.selection);
     }
