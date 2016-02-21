@@ -17,8 +17,12 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.yahoo.squidb.data.SquidCursor;
+import com.yahoo.squidb.sql.Query;
+
 import org.w3c.dom.Text;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends ListActivity {
@@ -26,24 +30,34 @@ public class MainActivity extends ListActivity {
     public final static String EXTRA_MESSAGE = "app.sourabhlal.Filter";
 
     private TextView selection;
-    private static Contact[] items={};
+    private Contact[] items={};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+
+        MyDataBase db = new MyDataBase(getApplicationContext());
+        Query selectAll = Query.select();
+        SquidCursor<Contact> c = db.query(Contact.class, selectAll);
+        List<Contact> contacts = new ArrayList<>();
+
+        try {
+            Contact p = new Contact();
+            for (c.moveToFirst(); !c.isAfterLast(); c.moveToNext()) {
+                p.readPropertiesFromCursor(c);
+                Log.i("success", p.getName() + " HAS NUMBER " + p.getNumber());
+                contacts.add(p);
+            }
+        } finally {
+            c.close();
+        }
+
+        Contact[] array = contacts.toArray(new Contact[contacts.size()]);
+        items = array;
+
         setListAdapter(new AccountAdapter());
         selection=(TextView)findViewById(R.id.selection);
-        //DBHelper dh = new DBHelper(getApplicationContext());
-        //List<Contact> contacts = dh.getAllContacts();
-        //Contact[] array = contacts.toArray(new Contact[contacts.size()]);
-        //items = array;
-        if(items.length>0){
-            Log.d("ZERO",items[0].getName());
-        }
-        else{
-            Log.d("ZERO","EMPTY");
-        }
     }
 
     class AccountAdapter extends ArrayAdapter<Contact> {
@@ -96,7 +110,7 @@ public class MainActivity extends ListActivity {
     /**Called whenever the user clicks the Send button */
     public void addContact (View view){
         Intent intent = new Intent(this, AddContactActivity.class);
-        String message = "New Account Add Screen";
+        String message = "New Contact Add Screen";
         intent.putExtra(EXTRA_MESSAGE, message);
         startActivity(intent);
     }
