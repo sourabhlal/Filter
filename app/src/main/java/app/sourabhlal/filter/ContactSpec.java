@@ -18,4 +18,3 @@ public class ContactSpec {
     public String Address;
     public String Website;
 }
-
