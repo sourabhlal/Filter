@@ -13,10 +13,12 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.EditText;
+import android.widget.ImageView;
 
 public class AddContactActivity extends AppCompatActivity {
 
     public final static String EXTRA_MESSAGE = "app.sourabhlal.Filter";
+    ImageView contactImageView;
 
     String[] language ={"C","C++","Java",".NET","iPhone","Android","ASP.NET","PHP"};
     @Override
@@ -34,10 +36,29 @@ public class AddContactActivity extends AppCompatActivity {
         actv.setThreshold(1);//will start working from first character
         actv.setAdapter(adapter);//setting the adapter data into the AutoCompleteTextView
         actv.setTextColor(Color.RED);
+        contactImageView = (ImageView) findViewById(R.id.imageViewContact);
+        contactImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setType("image/*");
+                intent.setAction(Intent.ACTION_GET_CONTENT);
+                startActivityForResult(Intent.createChooser(intent, "Select Image"),1);
+            }
+        });
+
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
+
+    public void onActivityResult(int reqCode, int resCode, Intent data) {
+        if(resCode == RESULT_OK){
+            if(reqCode == 1){
+                contactImageView.setImageURI(data.getData());
+            }
+        }
+    }
 
     public void saveContact (View view){
         Intent intent = new Intent(this, MainActivity.class);
@@ -49,6 +70,7 @@ public class AddContactActivity extends AppCompatActivity {
         newCon.setEmail(((EditText) findViewById(R.id.editEmail)).getText().toString());
         newCon.setAddress(((EditText) findViewById(R.id.editAddress)).getText().toString());
         newCon.setWebsite(((EditText) findViewById(R.id.editWebsite)).getText().toString());
+        contactImageView = (ImageView) findViewById(R.id.imageViewContact);
 
         Log.d("Contact: ", newCon.getName() + " " + newCon.getNumber());
 

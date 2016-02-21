@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/elkhamlichisofia/Desktop/Filter/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="/Users/elkhamlichisofia/Desktop/Filter/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.1.1_ed29fa1ea2483172e4223270f39966a7c8e1009f.jar" />
+    </item>
+    <item
+        jar="/Users/elkhamlichisofia/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.1/support-annotations-23.1.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="/Users/elkhamlichisofia/Desktop/Filter/app/build/intermediates/pre-dexed/debug/support-annotations-23.1.1_08cb4c25a43426cdd34288cc07aead90719bc7e6.jar" />
+    </item>
+    <item
+        jar="/Users/elkhamlichisofia/Desktop/Filter/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="09c5e804bc67fc0580360043dff067df574a60d4">
+        <dex dex="/Users/elkhamlichisofia/Desktop/Filter/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-23.1.1_531a49b70ff60d9ffba9786e41648f78c71019c2.jar" />
+    </item>
+    <item
+        jar="/Users/elkhamlichisofia/Desktop/Filter/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/libs/internal_impl-23.1.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="/Users/elkhamlichisofia/Desktop/Filter/app/build/intermediates/pre-dexed/debug/internal_impl-23.1.1_132eab68e62ffe982617123375603d17af4bc8ef.jar" />
+    </item>
+    <item
+        jar="/Users/elkhamlichisofia/Desktop/Filter/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="379471b2bd17d9737c050345c08e8c7d16589784">
+        <dex dex="/Users/elkhamlichisofia/Desktop/Filter/app/build/intermediates/pre-dexed/debug/com.android.support-design-23.1.1_be410fa343b08598ad4e1d3bda5939f6e02ad6c3.jar" />
+    </item>
+    <item
+        jar="/Users/elkhamlichisofia/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.2.4/a60a5e993c98c864010053cb901b7eab25306568/gson-2.2.4.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="a60a5e993c98c864010053cb901b7eab25306568">
+        <dex dex="/Users/elkhamlichisofia/Desktop/Filter/app/build/intermediates/pre-dexed/debug/gson-2.2.4_0a8ab3a097389a37da09c69e2bf0af0c41917359.jar" />
+    </item>
+    <item
+        jar="/Users/elkhamlichisofia/.gradle/caches/modules-2/files-2.1/com.yahoo.squidb/squidb-annotations/2.0.0/ef87936cc9a021ba9ac3b9468d346bbe0b15e401/squidb-annotations-2.0.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="ef87936cc9a021ba9ac3b9468d346bbe0b15e401">
+        <dex dex="/Users/elkhamlichisofia/Desktop/Filter/app/build/intermediates/pre-dexed/debug/squidb-annotations-2.0.0_5decc42e4d4223726f972b2674977502a0808bae.jar" />
+    </item>
+    <item
+        jar="/Users/elkhamlichisofia/Desktop/Filter/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
+        <dex dex="/Users/elkhamlichisofia/Desktop/Filter/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.1.1_7f2e21ade13bca86a783341160bf204f802333a6.jar" />
+    </item>
+    <item
+        jar="/Users/elkhamlichisofia/Desktop/Filter/app/build/intermediates/exploded-aar/com.yahoo.squidb/squidb/2.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="969b9cca7266ca92860dcb112c56a01fc09530a8">
+        <dex dex="/Users/elkhamlichisofia/Desktop/Filter/app/build/intermediates/pre-dexed/debug/com.yahoo.squidb-squidb-2.0.0_76c8fe96e425babba9592913d11fca99ce341292.jar" />
+    </item>
+
+</items>
