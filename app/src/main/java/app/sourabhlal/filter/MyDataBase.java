@@ -28,7 +28,8 @@ public class MyDataBase extends SquidDatabase {
         return new Table[]{
                 // List all tables here
                 Contact.TABLE,
-                Label.TABLE
+                Label.TABLE,
+                Link.TABLE
         };
     }
 

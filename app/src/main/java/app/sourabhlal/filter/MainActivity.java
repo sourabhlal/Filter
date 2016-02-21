@@ -44,8 +44,8 @@ public class MainActivity extends ListActivity {
         List<Contact> contacts = new ArrayList<>();
 
         try {
-            Contact p = new Contact();
             for (c.moveToFirst(); !c.isAfterLast(); c.moveToNext()) {
+                Contact p = new Contact();
                 p.readPropertiesFromCursor(c);
                 Log.i("success", p.getName() + " HAS NUMBER " + p.getNumber());
                 contacts.add(p);
@@ -58,10 +58,11 @@ public class MainActivity extends ListActivity {
         items = array;
 
         setListAdapter(new AccountAdapter());
-        selection=(TextView)findViewById(R.id.selection);
+        //selection=(TextView)findViewById(R.id.selection);
     }
 
     class AccountAdapter extends ArrayAdapter<Contact> {
+
         AccountAdapter() {
             super(MainActivity.this, R.layout.contact_list_item, R.id.label, items);
         }

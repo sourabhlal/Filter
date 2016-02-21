@@ -8,12 +8,32 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="app.sourabhlal.filter.MainActivity"
     tools:showIn="@layout/activity_main">
-
-    <TextView
-        android:id="@+id/selection"
+    <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        />
+        android:layout_height="wrap_content">
+
+        <AutoCompleteTextView
+            android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=""
+            android:maxEms="10"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/editTags"
+            android:layout_below="@+id/filter"
+            android:text=""
+            android:imeOptions="actionDone">
+            <requestFocus />
+        </AutoCompleteTextView>
+        <ImageButton
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_filter"
+            android:layout_centerVertical="true" />
+    </LinearLayout>
+
     <ListView
         android:id="@android:id/list"
         android:layout_width="fill_parent"
