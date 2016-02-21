@@ -15,9 +15,7 @@ public class ContactSpec {
     public String Name;
     public String Number;
     public String Email;
-
-    @ColumnSpec(name = "Address")
-    public long Address;
+    public String Address;
     public String Website;
 }
 
