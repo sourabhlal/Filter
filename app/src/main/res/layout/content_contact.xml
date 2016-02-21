@@ -28,12 +28,15 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp">
 
         <TextView
             android:id="@+id/Name"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:gravity="right"
+            android:paddingRight="10dp"
             android:layout_weight="1"
             android:ems="10"
             android:text="Name:" />
@@ -53,13 +56,15 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp">
 
         <TextView
             android:id="@+id/Phone"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="0dp"
+            android:gravity="right"
+            android:paddingRight="10dp"
             android:layout_weight="1"
             android:ems="10"
             android:text="Phone Number:" />
@@ -79,12 +84,15 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp">
 
         <TextView
             android:id="@+id/email"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:gravity="right"
+            android:paddingRight="10dp"
             android:layout_weight="1"
             android:ems="10"
             android:text="Email:" />
@@ -102,12 +110,15 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp">
 
         <TextView
             android:id="@+id/address"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:gravity="right"
+            android:paddingRight="10dp"
             android:layout_weight="1"
             android:ems="10"
             android:text="Address:" />
@@ -125,12 +136,15 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp">
 
         <TextView
             android:id="@+id/website"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:gravity="right"
+            android:paddingRight="10dp"
             android:layout_weight="1"
             android:ems="10"
             android:text="Website:" />
