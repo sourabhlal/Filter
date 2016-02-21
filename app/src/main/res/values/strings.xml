@@ -62,4 +62,5 @@
 
     <string name="pref_title_vibrate">Vibrate</string>
     <string name="title_activity_contact">ContactActivity</string>
+    <string name="title_activity_edit_contact">EditContactActivity</string>
 </resources>

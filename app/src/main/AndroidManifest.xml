@@ -36,6 +36,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="app.sourabhlal.filter.MainActivity" />
         </activity>
+        <activity
+            android:name=".EditContactActivity"
+            android:label="@string/title_activity_edit_contact"
+            android:parentActivityName=".ContactActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="app.sourabhlal.filter.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

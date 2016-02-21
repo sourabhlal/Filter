@@ -13,6 +13,9 @@ import android.widget.TextView;
 import com.google.gson.Gson;
 
 public class ContactActivity extends AppCompatActivity {
+    public final static String EXTRA_MESSAGE = "app.sourabhlal.Filter";
+
+    Contact contact = new Contact();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,20 +26,29 @@ public class ContactActivity extends AppCompatActivity {
         // get Contact information
         String target = getIntent().getStringExtra("ContactAsString");
         Gson gS = new Gson();
-        Contact contact = gS.fromJson(target, Contact.class); // Converts the JSON String to an Object
+        this.contact = gS.fromJson(target, Contact.class); // Converts the JSON String to an Object
         Log.d("CONTACT", contact.getName());
         final TextView name = (TextView) findViewById(R.id.conName);
         final TextView phone = (TextView) findViewById(R.id.conPhone);
         final TextView email = (TextView) findViewById(R.id.conEmail);
         final TextView website = (TextView) findViewById(R.id.conWebsite);
         final TextView address = (TextView) findViewById(R.id.conAddress);
-        name.setText(contact.getName());
-        phone.setText(contact.getNumber());
-        email.setText(contact.getEmail());
-        website.setText(contact.getWebsite());
-        address.setText(contact.getAddress());
+        name.setText(this.contact.getName());
+        phone.setText(this.contact.getNumber());
+        email.setText(this.contact.getEmail());
+        website.setText(this.contact.getWebsite());
+        address.setText(this.contact.getAddress());
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+    }
 
+    public void editContact (View view){
+        Intent intent = new Intent(this, EditContactActivity.class);
+        String message = "Existing Contact Edit Screen";
+        intent.putExtra(EXTRA_MESSAGE, message);
+        Gson gS = new Gson();
+        String target = gS.toJson(this.contact); // Converts the object to a JSON String
+        intent.putExtra("ContactAsString", target );
+        startActivity(intent);
     }
 
 }
