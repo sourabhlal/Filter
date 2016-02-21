@@ -41,9 +41,10 @@ public class AddContactActivity extends AppCompatActivity {
 
     public void saveContact (View view){
         Intent intent = new Intent(this, MainActivity.class);
-        DBHelper dh = new DBHelper(getApplicationContext());
+        MyDataBase db = new MyDataBase(getApplicationContext());
         String name = ((EditText)findViewById(R.id.editName)).getText().toString();
-        Contact newCon = new Contact(name);
+        Contact newCon = new Contact();
+        newCon.setName(name);
         newCon.setNumber(((EditText) findViewById(R.id.editPhone)).getText().toString());
         newCon.setEmail(((EditText) findViewById(R.id.editEmail)).getText().toString());
         newCon.setAddress(((EditText) findViewById(R.id.editAddress)).getText().toString());
@@ -51,7 +52,7 @@ public class AddContactActivity extends AppCompatActivity {
 
         Log.d("Contact: ", newCon.getName() + " " + newCon.getNumber());
 
-        dh.addContact(newCon);
+        db.persist(newCon);
         String message = "Save Account";
         intent.putExtra(EXTRA_MESSAGE, message);
         startActivity(intent);

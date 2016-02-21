@@ -1,7 +1,7 @@
 package app.sourabhlal.filter;
 
 import android.content.Context;
-import app.sourabhlal.filter.Contact;
+
 import com.yahoo.squidb.data.SquidDatabase;
 import com.yahoo.squidb.data.adapter.SQLiteDatabaseWrapper;
 import com.yahoo.squidb.sql.Table;
@@ -27,7 +27,6 @@ public class MyDataBase extends SquidDatabase {
     protected Table[] getTables() {
         return new Table[]{
                 // List all tables here
-                Contact.TABLE;
         };
     }
 

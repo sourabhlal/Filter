@@ -34,10 +34,10 @@ public class MainActivity extends ListActivity {
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         setListAdapter(new AccountAdapter());
         selection=(TextView)findViewById(R.id.selection);
-        DBHelper dh = new DBHelper(getApplicationContext());
-        List<Contact> contacts = dh.getAllContacts();
-        Contact[] array = contacts.toArray(new Contact[contacts.size()]);
-        items = array;
+        //DBHelper dh = new DBHelper(getApplicationContext());
+        //List<Contact> contacts = dh.getAllContacts();
+        //Contact[] array = contacts.toArray(new Contact[contacts.size()]);
+        //items = array;
         if(items.length>0){
             Log.d("ZERO",items[0].getName());
         }
