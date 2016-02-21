@@ -1,107 +1,107 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/elkhamlichisofia/Desktop/Filter/app/src/main/AndroidManifest.xml:2:1-50:12
-	package
-		ADDED from /Users/elkhamlichisofia/Desktop/Filter/app/src/main/AndroidManifest.xml:3:5-36
-		INJECTED from /Users/elkhamlichisofia/Desktop/Filter/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/elkhamlichisofia/Desktop/Filter/app/src/main/AndroidManifest.xml
-	android:versionName
-		INJECTED from /Users/elkhamlichisofia/Desktop/Filter/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/elkhamlichisofia/Desktop/Filter/app/src/main/AndroidManifest.xml
+ADDED from /home/jpbreuer/Projects/hackupc/Filter/app/src/main/AndroidManifest.xml:2:1-50:12
 	xmlns:android
-		ADDED from /Users/elkhamlichisofia/Desktop/Filter/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from /home/jpbreuer/Projects/hackupc/Filter/app/src/main/AndroidManifest.xml:2:11-69
+	package
+		ADDED from /home/jpbreuer/Projects/hackupc/Filter/app/src/main/AndroidManifest.xml:3:5-36
+		INJECTED from /home/jpbreuer/Projects/hackupc/Filter/app/src/main/AndroidManifest.xml
+		INJECTED from /home/jpbreuer/Projects/hackupc/Filter/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/jpbreuer/Projects/hackupc/Filter/app/src/main/AndroidManifest.xml
+		INJECTED from /home/jpbreuer/Projects/hackupc/Filter/app/src/main/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /Users/elkhamlichisofia/Desktop/Filter/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/elkhamlichisofia/Desktop/Filter/app/src/main/AndroidManifest.xml
+		INJECTED from /home/jpbreuer/Projects/hackupc/Filter/app/src/main/AndroidManifest.xml
+		INJECTED from /home/jpbreuer/Projects/hackupc/Filter/app/src/main/AndroidManifest.xml
 application
-ADDED from /Users/elkhamlichisofia/Desktop/Filter/app/src/main/AndroidManifest.xml:5:5-48:19
-MERGED from [com.android.support:appcompat-v7:23.1.1] /Users/elkhamlichisofia/Desktop/Filter/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.1.1] /Users/elkhamlichisofia/Desktop/Filter/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design:23.1.1] /Users/elkhamlichisofia/Desktop/Filter/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:appcompat-v7:23.1.1] /Users/elkhamlichisofia/Desktop/Filter/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.1.1] /Users/elkhamlichisofia/Desktop/Filter/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.1.1] /Users/elkhamlichisofia/Desktop/Filter/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.1.1] /Users/elkhamlichisofia/Desktop/Filter/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.1.1] /Users/elkhamlichisofia/Desktop/Filter/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:22:5-20
-	android:label
-		ADDED from /Users/elkhamlichisofia/Desktop/Filter/app/src/main/AndroidManifest.xml:8:9-41
+ADDED from /home/jpbreuer/Projects/hackupc/Filter/app/src/main/AndroidManifest.xml:5:5-48:19
+MERGED from [com.android.support:appcompat-v7:23.1.1] /home/jpbreuer/Projects/hackupc/Filter/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.1.1] /home/jpbreuer/Projects/hackupc/Filter/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:23.1.1] /home/jpbreuer/Projects/hackupc/Filter/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:23.1.1] /home/jpbreuer/Projects/hackupc/Filter/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.1.1] /home/jpbreuer/Projects/hackupc/Filter/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.1.1] /home/jpbreuer/Projects/hackupc/Filter/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.1.1] /home/jpbreuer/Projects/hackupc/Filter/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.1.1] /home/jpbreuer/Projects/hackupc/Filter/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:22:5-20
 	android:supportsRtl
-		ADDED from /Users/elkhamlichisofia/Desktop/Filter/app/src/main/AndroidManifest.xml:9:9-35
+		ADDED from /home/jpbreuer/Projects/hackupc/Filter/app/src/main/AndroidManifest.xml:9:9-35
+	android:label
+		ADDED from /home/jpbreuer/Projects/hackupc/Filter/app/src/main/AndroidManifest.xml:8:9-41
 	android:allowBackup
-		ADDED from /Users/elkhamlichisofia/Desktop/Filter/app/src/main/AndroidManifest.xml:6:9-35
+		ADDED from /home/jpbreuer/Projects/hackupc/Filter/app/src/main/AndroidManifest.xml:6:9-35
 	android:icon
-		ADDED from /Users/elkhamlichisofia/Desktop/Filter/app/src/main/AndroidManifest.xml:7:9-43
+		ADDED from /home/jpbreuer/Projects/hackupc/Filter/app/src/main/AndroidManifest.xml:7:9-43
 	android:theme
-		ADDED from /Users/elkhamlichisofia/Desktop/Filter/app/src/main/AndroidManifest.xml:10:9-40
+		ADDED from /home/jpbreuer/Projects/hackupc/Filter/app/src/main/AndroidManifest.xml:10:9-40
 activity#app.sourabhlal.filter.MainActivity
-ADDED from /Users/elkhamlichisofia/Desktop/Filter/app/src/main/AndroidManifest.xml:11:9-20:20
+ADDED from /home/jpbreuer/Projects/hackupc/Filter/app/src/main/AndroidManifest.xml:11:9-20:20
 	android:label
-		ADDED from /Users/elkhamlichisofia/Desktop/Filter/app/src/main/AndroidManifest.xml:13:13-45
+		ADDED from /home/jpbreuer/Projects/hackupc/Filter/app/src/main/AndroidManifest.xml:13:13-45
 	android:theme
-		ADDED from /Users/elkhamlichisofia/Desktop/Filter/app/src/main/AndroidManifest.xml:14:13-56
+		ADDED from /home/jpbreuer/Projects/hackupc/Filter/app/src/main/AndroidManifest.xml:14:13-56
 	android:name
-		ADDED from /Users/elkhamlichisofia/Desktop/Filter/app/src/main/AndroidManifest.xml:12:13-41
+		ADDED from /home/jpbreuer/Projects/hackupc/Filter/app/src/main/AndroidManifest.xml:12:13-41
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /Users/elkhamlichisofia/Desktop/Filter/app/src/main/AndroidManifest.xml:15:13-19:29
+ADDED from /home/jpbreuer/Projects/hackupc/Filter/app/src/main/AndroidManifest.xml:15:13-19:29
 action#android.intent.action.MAIN
-ADDED from /Users/elkhamlichisofia/Desktop/Filter/app/src/main/AndroidManifest.xml:16:17-69
+ADDED from /home/jpbreuer/Projects/hackupc/Filter/app/src/main/AndroidManifest.xml:16:17-69
 	android:name
-		ADDED from /Users/elkhamlichisofia/Desktop/Filter/app/src/main/AndroidManifest.xml:16:25-66
+		ADDED from /home/jpbreuer/Projects/hackupc/Filter/app/src/main/AndroidManifest.xml:16:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/elkhamlichisofia/Desktop/Filter/app/src/main/AndroidManifest.xml:18:17-77
+ADDED from /home/jpbreuer/Projects/hackupc/Filter/app/src/main/AndroidManifest.xml:18:17-77
 	android:name
-		ADDED from /Users/elkhamlichisofia/Desktop/Filter/app/src/main/AndroidManifest.xml:18:27-74
+		ADDED from /home/jpbreuer/Projects/hackupc/Filter/app/src/main/AndroidManifest.xml:18:27-74
 activity#app.sourabhlal.filter.AddContactActivity
-ADDED from /Users/elkhamlichisofia/Desktop/Filter/app/src/main/AndroidManifest.xml:21:9-29:20
+ADDED from /home/jpbreuer/Projects/hackupc/Filter/app/src/main/AndroidManifest.xml:21:9-29:20
 	android:label
-		ADDED from /Users/elkhamlichisofia/Desktop/Filter/app/src/main/AndroidManifest.xml:23:13-63
-	android:parentActivityName
-		ADDED from /Users/elkhamlichisofia/Desktop/Filter/app/src/main/AndroidManifest.xml:24:13-55
+		ADDED from /home/jpbreuer/Projects/hackupc/Filter/app/src/main/AndroidManifest.xml:23:13-63
 	android:theme
-		ADDED from /Users/elkhamlichisofia/Desktop/Filter/app/src/main/AndroidManifest.xml:25:13-56
+		ADDED from /home/jpbreuer/Projects/hackupc/Filter/app/src/main/AndroidManifest.xml:25:13-56
+	android:parentActivityName
+		ADDED from /home/jpbreuer/Projects/hackupc/Filter/app/src/main/AndroidManifest.xml:24:13-55
 	android:name
-		ADDED from /Users/elkhamlichisofia/Desktop/Filter/app/src/main/AndroidManifest.xml:22:13-47
+		ADDED from /home/jpbreuer/Projects/hackupc/Filter/app/src/main/AndroidManifest.xml:22:13-47
 meta-data#android.support.PARENT_ACTIVITY
-ADDED from /Users/elkhamlichisofia/Desktop/Filter/app/src/main/AndroidManifest.xml:26:13-28:70
+ADDED from /home/jpbreuer/Projects/hackupc/Filter/app/src/main/AndroidManifest.xml:26:13-28:70
+	android:name
+		ADDED from /home/jpbreuer/Projects/hackupc/Filter/app/src/main/AndroidManifest.xml:27:17-63
 	android:value
-		ADDED from /Users/elkhamlichisofia/Desktop/Filter/app/src/main/AndroidManifest.xml:28:17-67
-	android:name
-		ADDED from /Users/elkhamlichisofia/Desktop/Filter/app/src/main/AndroidManifest.xml:27:17-63
+		ADDED from /home/jpbreuer/Projects/hackupc/Filter/app/src/main/AndroidManifest.xml:28:17-67
 activity#app.sourabhlal.filter.ContactActivity
-ADDED from /Users/elkhamlichisofia/Desktop/Filter/app/src/main/AndroidManifest.xml:30:9-38:20
+ADDED from /home/jpbreuer/Projects/hackupc/Filter/app/src/main/AndroidManifest.xml:30:9-38:20
 	android:label
-		ADDED from /Users/elkhamlichisofia/Desktop/Filter/app/src/main/AndroidManifest.xml:32:13-59
-	android:parentActivityName
-		ADDED from /Users/elkhamlichisofia/Desktop/Filter/app/src/main/AndroidManifest.xml:33:13-55
+		ADDED from /home/jpbreuer/Projects/hackupc/Filter/app/src/main/AndroidManifest.xml:32:13-59
 	android:theme
-		ADDED from /Users/elkhamlichisofia/Desktop/Filter/app/src/main/AndroidManifest.xml:34:13-56
+		ADDED from /home/jpbreuer/Projects/hackupc/Filter/app/src/main/AndroidManifest.xml:34:13-56
+	android:parentActivityName
+		ADDED from /home/jpbreuer/Projects/hackupc/Filter/app/src/main/AndroidManifest.xml:33:13-55
 	android:name
-		ADDED from /Users/elkhamlichisofia/Desktop/Filter/app/src/main/AndroidManifest.xml:31:13-44
+		ADDED from /home/jpbreuer/Projects/hackupc/Filter/app/src/main/AndroidManifest.xml:31:13-44
 activity#app.sourabhlal.filter.EditContactActivity
-ADDED from /Users/elkhamlichisofia/Desktop/Filter/app/src/main/AndroidManifest.xml:39:9-47:20
+ADDED from /home/jpbreuer/Projects/hackupc/Filter/app/src/main/AndroidManifest.xml:39:9-47:20
 	android:label
-		ADDED from /Users/elkhamlichisofia/Desktop/Filter/app/src/main/AndroidManifest.xml:41:13-64
-	android:parentActivityName
-		ADDED from /Users/elkhamlichisofia/Desktop/Filter/app/src/main/AndroidManifest.xml:42:13-58
+		ADDED from /home/jpbreuer/Projects/hackupc/Filter/app/src/main/AndroidManifest.xml:41:13-64
 	android:theme
-		ADDED from /Users/elkhamlichisofia/Desktop/Filter/app/src/main/AndroidManifest.xml:43:13-56
+		ADDED from /home/jpbreuer/Projects/hackupc/Filter/app/src/main/AndroidManifest.xml:43:13-56
+	android:parentActivityName
+		ADDED from /home/jpbreuer/Projects/hackupc/Filter/app/src/main/AndroidManifest.xml:42:13-58
 	android:name
-		ADDED from /Users/elkhamlichisofia/Desktop/Filter/app/src/main/AndroidManifest.xml:40:13-48
+		ADDED from /home/jpbreuer/Projects/hackupc/Filter/app/src/main/AndroidManifest.xml:40:13-48
 uses-sdk
-INJECTED from /Users/elkhamlichisofia/Desktop/Filter/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support:appcompat-v7:23.1.1] /Users/elkhamlichisofia/Desktop/Filter/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.1.1] /Users/elkhamlichisofia/Desktop/Filter/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:design:23.1.1] /Users/elkhamlichisofia/Desktop/Filter/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:appcompat-v7:23.1.1] /Users/elkhamlichisofia/Desktop/Filter/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.1.1] /Users/elkhamlichisofia/Desktop/Filter/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:recyclerview-v7:23.1.1] /Users/elkhamlichisofia/Desktop/Filter/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.1/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.1.1] /Users/elkhamlichisofia/Desktop/Filter/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.1.1] /Users/elkhamlichisofia/Desktop/Filter/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.1.1] /Users/elkhamlichisofia/Desktop/Filter/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:20:5-43
-MERGED from [com.yahoo.squidb:squidb:2.0.0] /Users/elkhamlichisofia/Desktop/Filter/app/build/intermediates/exploded-aar/com.yahoo.squidb/squidb/2.0.0/AndroidManifest.xml:14:5-44
+INJECTED from /home/jpbreuer/Projects/hackupc/Filter/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:appcompat-v7:23.1.1] /home/jpbreuer/Projects/hackupc/Filter/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.1.1] /home/jpbreuer/Projects/hackupc/Filter/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:design:23.1.1] /home/jpbreuer/Projects/hackupc/Filter/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:23.1.1] /home/jpbreuer/Projects/hackupc/Filter/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.1.1] /home/jpbreuer/Projects/hackupc/Filter/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:23.1.1] /home/jpbreuer/Projects/hackupc/Filter/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.1/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.1.1] /home/jpbreuer/Projects/hackupc/Filter/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.1.1] /home/jpbreuer/Projects/hackupc/Filter/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.1.1] /home/jpbreuer/Projects/hackupc/Filter/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/AndroidManifest.xml:20:5-43
+MERGED from [com.yahoo.squidb:squidb:2.0.0] /home/jpbreuer/Projects/hackupc/Filter/app/build/intermediates/exploded-aar/com.yahoo.squidb/squidb/2.0.0/AndroidManifest.xml:14:5-44
 	android:targetSdkVersion
-		INJECTED from /Users/elkhamlichisofia/Desktop/Filter/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/elkhamlichisofia/Desktop/Filter/app/src/main/AndroidManifest.xml
+		INJECTED from /home/jpbreuer/Projects/hackupc/Filter/app/src/main/AndroidManifest.xml
+		INJECTED from /home/jpbreuer/Projects/hackupc/Filter/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/elkhamlichisofia/Desktop/Filter/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/elkhamlichisofia/Desktop/Filter/app/src/main/AndroidManifest.xml
+		INJECTED from /home/jpbreuer/Projects/hackupc/Filter/app/src/main/AndroidManifest.xml
+		INJECTED from /home/jpbreuer/Projects/hackupc/Filter/app/src/main/AndroidManifest.xml

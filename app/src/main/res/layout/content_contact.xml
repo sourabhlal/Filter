@@ -23,7 +23,7 @@
             android:layout_height="match_parent"
             android:id="@+id/imageView"
             android:layout_gravity="center"
-            android:src="#814141" />
+            android:src="@drawable/cat" />
     </FrameLayout>
 
     <LinearLayout
