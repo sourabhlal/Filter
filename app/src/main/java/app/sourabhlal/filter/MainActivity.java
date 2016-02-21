@@ -17,6 +17,7 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.google.gson.Gson;
 import com.yahoo.squidb.data.SquidCursor;
 import com.yahoo.squidb.sql.Query;
 
@@ -81,9 +82,14 @@ public class MainActivity extends ListActivity {
     }
 
     @Override
-    public void onListItemClick(ListView parent, View v, int position,
-                                long id) {
-        selection.setText(items[position].getName());
+    public void onListItemClick(ListView parent, View v, int position, long id) {
+        //selection.setText(items[position].getName());
+        Contact contact=(Contact)getListView().getItemAtPosition(position);
+        Gson gS = new Gson();
+        String target = gS.toJson(contact); // Converts the object to a JSON String
+        Intent intent = new Intent(this, ContactActivity.class);
+        intent.putExtra("ContactAsString", target );
+        startActivity(intent);
     }
 
     @Override
@@ -114,4 +120,5 @@ public class MainActivity extends ListActivity {
         intent.putExtra(EXTRA_MESSAGE, message);
         startActivity(intent);
     }
+
 }
